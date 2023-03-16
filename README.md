@@ -1,1 +1,1 @@
-# Homeworks
+# Homeworks for JS School
