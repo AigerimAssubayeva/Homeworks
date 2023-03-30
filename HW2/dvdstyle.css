@@ -1,0 +1,83 @@
+Quantoribody {
+    width: 100vw;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    background-color: #000;
+  }
+.logo
+{
+  width: 320px;
+	height: 160px;
+	background: url("media/logo.png");
+  background-size: cover;
+  display: block;
+  position: absolute;
+  filter: invert(17%) sepia(73%) saturate(7215%) hue-rotate(228deg) brightness(101%) contrast(105%);
+  -webkit-animation: moveX 1s  linear infinite alternate, moveY 3s linear infinite alternate, color-change 10s 1s steps(1) infinite;
+  -moz-animation: moveX 1s  linear infinite alternate, moveY 3s linear infinite alternate, color-change 10s 1s steps(1) infinite;
+  -o-animation: moveX 1s  linear infinite alternate, moveY 3s linear infinite alternate, color-change 10s 1s steps(1) infinite;
+  animation: moveX 1s  linear infinite alternate, moveY 3s linear infinite alternate, color-change 10s 1s steps(1) infinite;
+}
+  @-webkit-keyframes moveX {
+    from { left: 0; } to { left: calc(100vw - 320px);}
+  }
+  @-moz-keyframes moveX {
+    from { left: 0; } to { left: calc(100vw - 320px);}
+  }
+  @-o-keyframes moveX {
+    from { left: 0; } to { left: calc(100vw - 320px);}
+  }
+  @keyframes moveX {
+    from { left: 0; } to { left: calc(100vw - 320px);}
+  }
+
+  @-webkit-keyframes moveY {
+    from { top: 0; } to { top: calc(100vh - 160px); }
+  }
+  @-moz-keyframes moveY {
+    from { top: 0; } to { top: calc(100vh - 160px); }
+  }
+  @-o-keyframes moveY {
+    from { top: 0; } to { top: calc(100vh - 160px); }
+  }
+  @keyframes moveY {
+    from { top: 0; } to { top: calc(100vh - 160px); }
+  }
+
+@keyframes color-change {
+  0% {
+    filter: invert(88%) sepia(36%) saturate(317%) hue-rotate(121deg) brightness(96%) contrast(87%);
+	  }
+  10% {
+    filter: invert(93%) sepia(56%) saturate(3104%) hue-rotate(287deg) brightness(104%) contrast(101%);
+      }
+  20% {
+    filter: invert(100%) sepia(58%) saturate(995%) hue-rotate(52deg) brightness(98%) contrast(99%);
+    }
+  30% {
+    filter: invert(89%) sepia(17%) saturate(408%) hue-rotate(347deg) brightness(102%) contrast(97%);
+	  }
+  40% {
+    filter: invert(21%) sepia(96%) saturate(7447%) hue-rotate(1deg) brightness(102%) contrast(118%);
+    }  
+  50% {
+    filter: invert(65%) sepia(9%) saturate(602%) hue-rotate(217deg) brightness(89%) contrast(95%);
+      } 
+  60% {
+    filter: invert(13%) sepia(82%) saturate(7249%) hue-rotate(276deg) brightness(106%) contrast(122%);
+        }
+  70% {
+    filter: invert(94%) sepia(60%) saturate(6274%) hue-rotate(135deg) brightness(103%) contrast(105%);
+      }  
+  80% {
+    filter: invert(60%) sepia(81%) saturate(1935%) hue-rotate(348deg) brightness(101%) contrast(101%);
+      }  
+  90% {
+    filter: invert(12%) sepia(28%) saturate(7097%) hue-rotate(305deg) brightness(91%) contrast(95%);
+      }
+   100% {
+    filter: invert(44%) sepia(55%) saturate(6708%) hue-rotate(268deg) brightness(94%) contrast(82%);
+  }
+}
