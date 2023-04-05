@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Figma</title>
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/nmp/modern-normalize@1.1.0/modern-normalize.min.css">
+  <!-- Fonts --> 
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- <div class="grid-container"> -->
+  <!-- Header -->
+
+  <header class="header">
+    <div class="wrap-header">
+      <div class="header__left">
+        <img src="images/header/search.svg" alt="search">
+        <input class="header__input"type="search" placeholder="Search...">
+      </div>
+      <div class="header__right">
+        <img class="header-icons__icon" src="images/header/bell.svg" alt="bell">
+        <img class="header-icons__icon" src="images/header/calendar.svg" alt="calendar">
+        <img class="header-icons__icon" src="images/header/layout.svg" alt="layout">
+        <img class="header-icons__avatar" src="images/header/avatar.svg" alt="avatar">      
+      </div>
+    </div>
+  </header> 
+
+  <!-- End of Header -->
+
+  <!-- Sidebar -->
+
+<sidebar class="sidebar">
+  <img class="sidebar__logo" src="images/sidebar/logo.svg" alt="logo">
+  <div class="wrap-sidebar">
+    <div class="sidebar__dashboard">
+      <span class="sidebar__title">DASHBOARD</span>
+      <div class="sidebar__menu">
+  
+        <div class="sidebar__row">
+          <div class="item-menu">
+            <img class="item-menu__icon" src="images/sidebar/dashboard.svg">
+            <span class="item-menu__title">Dashboard</span>
+            <img class="item-menu__arrow" src="images/sidebar/arrowDown.svg" alt="arrow">
+          </div>
+        </div>
+        
+        <div class="sidebar__row">
+          <div class="item-menu">
+            <img class="item-menu__icon" src="images/sidebar/Messages.svg">
+            <span class="item-menu__title">Messages</span>
+            <img class="item-menu__arrow" src="images/sidebar/arrowDown.svg" alt="arrow">
+          </div>
+        </div>
+      
+        <div class="sidebar__row">
+          <div class="item-menu">
+            <img class="item-menu__icon" src="images/sidebar/friends.svg">
+            <span class="item-menu__title">Friends</span>
+            <img class="item-menu__arrow" src="images/sidebar/arrowDown.svg" alt="arrow">
+          </div>
+        </div>
+  
+        <div class="sidebar__row">
+          <div class="item-menu">
+            <img class="item-menu__icon" src="images/sidebar/apps.svg">
+            <span class="item-menu__title">Apps</span>
+            <img class="item-menu__arrow" src="images/sidebar/arrowDown.svg" alt="arrow">
+          </div>
+        </div>
+    </div> 
+  
+    <div class="sidebar__pages">
+      
+      <span class="sidebar__title">PAGES</span>  
+      <div class="sidebar__menu">
+  
+        <div class="sidebar__row">
+          <div class="item-menu">
+            <img class="item-menu__icon" src="images/sidebar/help.svg">
+            <span class="item-menu__title">Help Center</span>
+            <img class="item-menu__arrow" src="images/sidebar/arrowDown.svg" alt="arrow">
+          </div>
+        </div>
+  
+        <div class="sidebar__row">
+          <div class="item-menu">
+            <img class="item-menu__icon" src="images/sidebar/file.svg">
+            <span class="item-menu__title">File Manager</span>
+            <img class="item-menu__arrow" src="images/sidebar/arrowDown.svg" alt="arrow">
+          </div>
+        </div>
+  
+      </div>
+    </div>
+  
+    <div class="sitebar__footer">
+      <img class="footer_icons" src="images/sidebar/settings.svg">
+      <img class="footer_icons" src="images/sidebar/logout.svg">   
+      <img class="footer_icons" src="images/sidebar/globe.svg">
+    </div>
+  </div>
+</sidebar>
+  
+  <!-- End of Sidebar -->
+
+
+  <!-- Main -->
+
+  <main class="body-container">
+      <div class="body-container__promo">
+        <div class="promo__text">
+          <span class="promo__upper">Unlock premium stats</span><br/>
+          <span class="promo__bottom">Get up to 10TB of storage for a limited time</span>
+        </div>
+        <div class="promo__button">
+          <img src="images/main/bolt.svg">
+          <button style="background-color:white">Upgrade</button>
+        </div>
+      </div>
+  
+      <div class="body-container__cards">
+        <div class="box-cards">
+          <h4 class="box-cards__title">Revenue</h4>
+          <h2 class="box-cards__data">$56,945</h2>
+          <div class="box-cards__badge">
+            <span class="box-cards__badge_number_green">45%</span>
+            <div class="box-cards__badge_shape_green"></div>
+          </div>
+          <span class="box-cards__from">From 4.6%</span>
+        </div>
+
+        <div class="box-cards">
+          <h4 class="box-cards__title">Users</h4>
+          <h2 class="box-cards__data">76.8%</h2>
+          <div class="box-cards__badge">
+            <span class="box-cards__badge_number_red">-1.7%</span>
+            <div class="box-cards__badge_shape_pink"></div>
+          </div>
+          <span class="box-cards__from">From 4.6%</span>
+        </div>
+
+        <div class="box-cards">
+          <h4 class="box-cards__title">New Signups</h4>
+          <h2 class="box-cards__data">116</h2>
+          <div class="box-cards__badge">
+            <span class="box-cards__badge_number_grey">0.00</span>
+            <div class="box-cards__badge_shape_grey"></div>
+          </div>
+          <span class="box-cards__from"></span>
+        </div>
+
+        <div class="box-cards">
+          <h4 class="box-cards__title">Retention</h4>
+          <h2 class="box-cards__data">12.67%</h2>
+          <div class="box-cards__badge">
+            <span class="box-cards__badge_number_green">-0.6%</span>
+            <div class="box-cards__badge_shape_green"></div>
+          </div>
+          <span class="box-cards__from">From 4.6%</span>
+        </div>
+      </div>
+
+      <div class="body-container__waves">   
+        <div class="waves__header">
+          <span >Performance</span>
+        </div>
+        <div class="waves__body">
+          <div class="waves__axisX">
+            <span class="axisX__days">Sun</span>
+            <span class="axisX__days">Mon</span>
+            <span class="axisX__days">Tue</span>
+            <span class="axisX__days">Wed</span>
+            <span class="axisX__days">Thu</span>
+            <span class="axisX__days">Fri</span>
+            <span class="axisX__days">Sat</span>
+          </div>
+          <div class="waves__axisY">
+            <span class="axisY__numbers">400</span>
+            <span class="axisY__numbers">300</span>
+            <span class="axisY__numbers">200</span>
+            <span class="axisY__numbers">100</span>
+            <span class="axisY__numbers">0</span>
+          </div>
+          <div class="waves__graph">
+            <img class="graph__inner" src="images/main/graph.svg">
+          </div>   
+        </div>
+      </div>
+      
+      <div class="body-container__table">
+        <div class="table__header">
+          <span>Installed apps</span>
+        </div>
+        <div class="table__body">
+          <table>
+            <thead>
+              <tr>
+                <th>Source</th>
+                <th>Amount</th>
+                <th>Status</th>
+                <th>UserID</th>
+                <th>Joined</th>
+                <th>Group</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><img src="images/installed/zepplin.svg" alt="zepplin">Zepplin</td>
+                <td>686.00</td>
+                <td>
+                  <p>Active</p>
+                </td>
+                <td>114423</td>
+                <td>October</td>
+                <td>Design</td>
+              </tr>
+
+              <tr>
+                <td><img src="images/installed/figma.svg" alt="figma">Figma</td>
+                <td>864.00</td>
+                <td>
+                  <p>Pending</p>
+                </td>
+                <td>76223</td>
+                <td>June</td>
+                <td>Finance</td>
+              </tr>
+
+              <tr>
+                <td><img src="images/installed/meta.svg" alt="meta">Meta</td>
+                <td>176.00</td>
+                <td>
+                  <p>Cancelled</p>
+                </td>
+                <td>89453</td>
+                <td>March</td>
+                <td>Coding</td>
+              </tr>
+
+              <tr>
+                <td><img src="images/installed/angular.svg" alt="angular">Angular</td>
+                <td>49.00</td>
+                <td>
+                  <p>Active</p>
+                </td>
+                <td>11467</td>
+                <td>February</td>
+                <td>Marketing</td>
+              </tr>
+
+              <tr>
+                <td><img src="images/installed/vue.svg" alt="vue">Vue</td>
+                <td>999.00</td>
+                <td>
+                  <p>Active</p>
+                </td>
+                <td>67385</td>
+                <td>October</td>
+                <td>Finance</td>
+              </tr>
+
+            </tbody>
+          </table>
+        </div>
+      </div>  
+    </main>
+
+  <!-- End of Main -->
+</body>
+
+</html>
