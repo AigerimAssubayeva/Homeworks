@@ -15,10 +15,6 @@
   --red-color: #DC3545;
 }
 
-html {
-  font-size: 100%;
-  line-height: 1.4;
-}
  * {
   padding: 0;
   margin: 0;
@@ -27,10 +23,16 @@ html {
   text-decoration: none;
   box-sizing: border-box;
   font-family: "Inter", sans-serif;
-} 
+}
+
+html {
+  font-size: 100%;
+  line-height: 1.4;
+}
 
 body {
   background-color: var(--background-grey-color);
+
 }
 
 /* -------- HEADER -------- */
@@ -313,30 +315,12 @@ flex-grow: 0;
   height: 10px;
 }
 
-.box-cards__badge_shape_green,
-.box-cards__badge_shape_pink,
-.box-cards__badge_shape_grey
- {
-  width: 54px;
-  height: 24px;
-  border-radius: 100px;
-}
-.box-cards__badge_shape_pink {
-  background-color: var(--pink-color);
-}
-.box-cards__badge_shape_grey {
-  background-color: var(--background-grey-color);
-}
-.box-cards__badge_shape_green {
-  background-color: var(--badge-color);
-}
-
 .box-cards__badge_number_red,
 .box-cards__badge_number_grey,
 .box-cards__badge_number_green
  {
-  width: 32px;
-  height: 20px;
+  width: 54px;
+  height: 24px;
   font-family: 'Inter';
   font-style: normal;
   font-weight: 600;
@@ -346,16 +330,23 @@ flex-grow: 0;
   flex: none;
   order: 2;
   flex-grow: 0;
+  border-radius: 100px;
+  padding: 5px
 }
 .box-cards__badge_number_red { 
   color: var(--red-color);
+  background-color: var(--pink-color);
+
 }
 
 .box-cards__badge_number_grey {
   color: var(--grey-color);
+  background-color: var(--background-grey-color);
+
 }
 .box-cards__badge_number_green {
   color: var(--green-color);
+  background-color: var(--badge-color);
 }
 
 .box-cards__from {
