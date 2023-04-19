@@ -33,11 +33,10 @@ function changeTheColorOfButton() {
 }
 
 // Search
-
 const searchtask = document.getElementById("find");
-const list = document.querySelectorAll("li");
 
 function filterList() {
+  const list = document.querySelectorAll("li");
   const searchText = searchtask.value.toLowerCase();
 
   list.forEach((item) => {
