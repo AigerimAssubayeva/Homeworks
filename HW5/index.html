@@ -3,48 +3,66 @@
 <head>
     <meta charset="UTF-8">
     <title>todo app</title>
-    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/modal.css">
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@500&family=Nunito:wght@400;500;700;800&display=swap" rel="stylesheet">
 </head>
-<body>
-    <div id="modal" class="modal-bg">
-        <div class="modal-window">
-          <div class="modal-title">
-            <span>Add New Task</span>
-          </div>
-          <div >
-            <input id="task-title" class="task-title" type="text" placeholder="Task title" onkeyup="changeTheColorOfButton()">
-          </div>
-          <div class="colors" id="'colors">
-            <span class="health" id="health">health</span>
-            <span class="work" id="work">work</span>
-            <span class="home" id="home">home</span>
-            <span class="other" id="other">other</span>
-            <input type="text" class="date" class="id"placeholder="17.02.2023">
-          </div>
-          <div class="modal-buttons">
-            <button class="cancel">Cancel</button>
-            <button class="addTask" id="addTask">Add Task</button>
-          </div>
-        </div>
+<body onload="data()">
+
+  <!-- List -->
+  <div class="main-container">
+    <div class="main-container__header">
+      <h1 class="header__title">To Do List</h1>
+      <div class="header__weather" id="header-weather">
+        <img class="weather_icon">
+        <span class="weather_data"></span>
+        <span class="weather_city"></span>
       </div>
-    
-      <div class="main-container">
-        <h2 class="header">To Do List</h2>
-        <div class="inputDiv">
-          <input class="search-bar" type="search" id="find" placeholder="Search task"> 
-          <button class ="newTask"id="newTask">+ New Task</button>
-        </div>
-        <ol class="notCompleted" id="notCompleted">
-        </ol>
-        <ol class="completed" id="completed">
-        </ol>
+    </div>
+
+    <div class="main-container__inputDiv">
+      <input class="search-bar" type="search" id="find" placeholder="Search task"> 
+      <button class ="newTask"id="newTask">+ New Task</button>
+    </div>
+
+    <div class="main-container__list">
+      <ol class="notCompleted" id="notCompleted">
+      </ol>
+      <ol class="completed" id="completed">
+      </ol>
+    </div>
+  </div>
+
+ <!-- Modal -->
+
+  <div id="modal" class="modal-bg">
+    <div class="modal-window">
+      <div class="modal-title">
+        <span>Add New Task</span>
       </div>
-      <script src="app.js"></script>
-      <script src="modal.js"></script>
+      <div >
+        <input id="task-title" class="task-title" type="text" placeholder="Task title" onkeyup="changeTheColorOfButton()">
+      </div>
+      <div class="colors" id="'colors">
+        <span class="health" id="health">health</span>
+        <span class="work" id="work">work</span>
+        <span class="home" id="home">home</span>
+        <span class="other" id="other">other</span>
+        <input type="text" class="date" class="id"placeholder="17.02.2023">
+      </div>
+      <div class="modal-buttons">
+        <button class="cancel">Cancel</button>
+        <button class="addTask" id="addTask" onclick="onAddTask()">Add Task</button>
+      </div>
+    </div>
+  </div>
+  
+  <script src="js/app.js" loading="lazy" defer></script>
+  <script src="js/modal.js" loading="lazy"></script>
+  <script src="js/weather.js"></script>
 </body>
 </html>
 <!-- test -->

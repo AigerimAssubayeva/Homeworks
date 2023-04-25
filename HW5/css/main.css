@@ -1,0 +1,169 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Nunito', sans-serif;
+}
+body {
+    height: 100vh;
+}
+.main-container {
+    position: relative;
+    min-height: 100vh; 
+    overflow: scroll;
+    width: 100vw;
+    height: 100vh; 
+    /* background-color: #639462; */
+    padding: 44px 165px;
+    display: flex;
+    flex-direction: column;
+    z-index: 1;
+}
+
+/* ======== HEADER ======== */
+
+.header__title {
+ 
+    width: 951px;
+    height: 85px;
+    /* border: 1px solid #639462; */
+    position: absolute;
+    font-size: 32px;
+    height: 36px;
+    font-weight: 700px;
+ }
+
+.header__weather {
+    width: 332px;
+    height: 65px;
+    margin-left: 560px;
+    /* border: 1px solid #639462;  */
+    display: flex;
+    justify-content: flex-end;
+    align-items: center; 
+    flex-direction: row;
+} 
+
+.weather_icon {
+    margin-right: 23px;
+}
+.weather_data {
+    padding-right: 90px; 
+    font-size: 18px;
+    font-weight: 700;
+
+} 
+.weather_city {
+    font-weight: 500;
+    font-size: 18px;
+    color: #838383;
+}
+/*======== END OF HEADER ======== */
+
+/* ======== SEARCH BAR ======== */
+
+.main-container__inputDiv {
+    position: absolute;
+    display: flex;
+    height: 54px;
+    width: 951px;
+    margin-top: 80px;
+
+}
+.search-bar {
+    position: absolute;
+    width: 752px;
+    height: 52px;
+    background-color: #F5F5F5;
+    color: #D2D2D2;
+    border: 1px solid #D2D2D2;
+    border-radius: 12px;
+    padding: 16px 21px;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 16px;
+    line-height: 20px; 
+}
+.newTask {
+    position: absolute;
+    width: 158.15px;
+    height: 52px;
+    background-color: #3C86F426;
+    color: #0053CF;
+    font-weight: 800;
+    font-size: 16px;
+    border-radius: 12px;
+    border: none;
+    margin-left: 790px;
+}
+
+/* ======== END OF SEARCH BAR ======== */
+
+/* ======== TASKS LIST ======== */
+
+.main-container__list {
+    margin-top: 130px;
+
+}
+
+h2, h3 {
+    font-size: 24px;
+    font-weight: 700;
+    margin-bottom: 24px;
+}
+
+.notCompleted, 
+.completed {
+    list-style: none;
+    margin-bottom: 41px;
+}
+
+.notCompleted li, 
+.completed li {
+    width: 422px;
+    font-size: 18px;
+    font-weight: 400;
+    margin-bottom: 30px;
+}
+
+.completed li {
+    color: #838383;
+}
+
+input[type="checkbox"] {
+    height: 24px;
+    width: 24px;
+    margin-right: 20px;
+    border-radius: 4px;
+    border: 2px solid #D2D2D2;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+}
+
+.Completed input[type="checkbox"] + .compl {
+    color: #D3D3D3;
+}
+
+input[type="checkbox"]:checked {
+    border-color: #D3D3D3;
+}
+
+input[type="checkbox"]:checked::before {
+    content: "\2714";
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 5px;
+    font-size: 16px;
+    color: #D3D3D3;
+}
+  
+.bin {
+    
+    float: right;
+    color: #000000;
+    cursor: pointer;
+    background-color: #fff;
+    border-color: transparent;
+} 
+
