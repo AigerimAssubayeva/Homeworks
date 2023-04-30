@@ -30,7 +30,7 @@ function showTasks() {
           console.log(task.title)
           htmlCompleted += `
           <li>
-            <input type="checkbox" checked disabled>
+            <input type="checkbox" onchange="completeTask(${task.id}, '${task.title}', this.checked)" checked>
             <label class="compl">${task.title}</label>
           </li>
         `;
@@ -43,13 +43,13 @@ function showTasks() {
 
 
 function completeTask(id, title, isCompleted) {
-    fetch(`http://localhost:3004/tasks/${id}`, {
-        method: 'PUT',
-        headers: {
-          'Content-Type': 'application/json'
-        },
-        body: JSON.stringify({title, isCompleted})
-    })
+  fetch(`http://localhost:3004/tasks/${id}`, {
+      method: 'PUT',
+      headers: {
+        'Content-Type': 'application/json'
+      },
+      body: JSON.stringify({title, isCompleted})
+  })
 }
 
 function deleteTask(id) {

@@ -2,12 +2,10 @@
   "tasks": [
     {
       "title": "attend the lecture",
-      "isCompleted": false,
       "id": 1
     },
     {
       "title": "buy books",
-      "isCompleted": false,
       "id": 2
     },
     {
@@ -16,9 +14,14 @@
       "id": 3
     },
     {
-      "title": "ppp",
-      "isCompleted": false,
-      "id": 4
+      "title": "book",
+      "isCompleted": true,
+      "id": 6
+    },
+    {
+      "title": "buy",
+      "isCompleted": true,
+      "id": 7
     }
   ]
 }
