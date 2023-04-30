@@ -42,7 +42,6 @@ function showTasks() {
 }
 
 
-
 function completeTask(id, title, isCompleted) {
     fetch(`http://localhost:3004/tasks/${id}`, {
         method: 'PUT',

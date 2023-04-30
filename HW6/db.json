@@ -1,24 +1,24 @@
 {
   "tasks": [
     {
-      "title": "attend lecture #7",
+      "title": "attend the lecture",
+      "isCompleted": false,
+      "id": 1
+    },
+    {
+      "title": "buy books",
       "isCompleted": false,
       "id": 2
     },
     {
-      "title": "do HW6",
+      "title": "finish HW7",
+      "isCompleted": false,
+      "id": 3
+    },
+    {
+      "title": "ppp",
       "isCompleted": false,
       "id": 4
-    },
-    {
-      "title": "Schedule IMV",
-      "isCompleted": false,
-      "id": 5
-    },
-    {
-      "title": "book",
-      "isCompleted": false,
-      "id": 6
     }
   ]
 }
